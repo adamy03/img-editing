@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Image Editor{% endblock %} 
+
+{% block content %}
+
+<h1>Image Segmentation/Noise Generation</h1>
+<div>
+    <form method="POST" action="/get_image" enctype="multipart/form-data">
+        <button type="submit" class="btn btn-primary">Get Image</button>
+    </form>
+
+    <img src="{{img}}" id="{{img}}">
+
+</div>
+
+{% endblock %} 
